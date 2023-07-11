@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
 import Home from "./components/home/Home";
-
+const data= require('./data/data.json')
 function App() {
 
 
@@ -9,7 +9,7 @@ function App() {
     <div className="App">
 
  
-      <Home/>
+      <Home data={data}/>
     </div>
 
   );

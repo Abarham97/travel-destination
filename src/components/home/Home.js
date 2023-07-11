@@ -11,11 +11,7 @@ function Home(props)
     return (
      <div>  <Header/>
     
-    {data.map((data,i=>
-            
-    <Tours name={data.name}/>
-         )
-         )}
+    <Tours data={props.data}/>
 
 
      <Footer/>
