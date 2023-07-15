@@ -13,8 +13,8 @@ function Home(props) {
       <div>
          <Header />
 
-         <Tours />
-         <TourDetails/>
+         <Tours data={props.data} />
+       
 
          <Footer />
       </div>
