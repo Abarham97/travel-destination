@@ -1,17 +1,22 @@
 import "./tour.css"
 import { Link, useParams } from "react-router-dom";
-function Tour({image,name,id}) {
+function Tour(props) {
  
-    return (
 
-        <div>
-            <Link to={`city/${id}`}>
-                <img src={image} alt={name}/>
-            </Link>
+return( <div>
+    {props.tour.map((obj, i) => (
+        <div key={i} >
+            <h3>{obj.name}</h3>
+            <p>
+                <Link to={`/city/${obj.id}`}> <img src={obj.image} alt={obj.id} /></Link><br />
+            </p>
+           
+
         </div>
 
-    )
+    ))}
+</div>)
+   
+           }
 
-}
-
-export default Tour;
+           export default Tour;
