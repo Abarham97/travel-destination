@@ -1,7 +1,7 @@
 
 
 import './Tours.css'
-import Tour from './tour/tour.';
+import Tour from './tour/tour';
 import TourDetails from '../TourDetails/TourDetails';
 import tour from "../../data/data.json"
 

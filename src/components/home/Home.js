@@ -14,7 +14,7 @@ function Home(props) {
          <Header />
 
          <Tours />
-         <TourDetails/>
+        <TourDetails/>
 
          <Footer />
       </div>
